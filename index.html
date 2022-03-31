@@ -23,6 +23,8 @@
                 $('#ua').html('<div id="ua">Safari</div>');;
             } else if (userAgent.indexOf("msie") != -1 || userAgent.indexOf("trident") != -1) {
                 $('#ua').html('<div id="ua">Internet Explorer</div>');
+            } else {
+                $('#ua').html('<div id="ua">その他</div>');
             }
         })
     </script>
