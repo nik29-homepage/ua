@@ -6,25 +6,23 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     </head>
     <script>
-        const userAgent = window.navigator.userAgent.toLowerCase();
-
         $('#ua').ready(function() {
-            if (userAgent.indexOf("edg") != -1 || userAgent.indexOf("edge") != -1) {
-                $('#ua').html('<div id="ua">Edge</div>');
-            } else if (userAgent.indexOf("chrome") != -1) {
-                $('#ua').html('<div id="ua">Chrome</div>');
-            } else if (userAgent.indexOf("firefox") != -1) {
-                $('#ua').html('<div id="ua">Firefox</div>')
-            } else if (userAgent.indexOf("opr") != -1 || userAgent.indexOf("opera") != -1) {
-                $('#ua').html('<div id="ua">Opera</div>');
-            } else if (userAgent.indexOf("opr") != -1 || userAgent.indexOf("opera") != -1) {
-                $('#ua').html('<div id="ua">Opera</div>');
-            } else if (userAgent.indexOf("safari") != -1) {
-                $('#ua').html('<div id="ua">Safari</div>');;
-            } else if (userAgent.indexOf("msie") != -1 || userAgent.indexOf("trident") != -1) {
-                $('#ua').html('<div id="ua">Internet Explorer</div>');
-            } else {
-                $('#ua').html('<div id="ua">その他</div>');
+            const agent = window.navigator.userAgent.toLowerCase()
+
+            if (agent.indexOf("msie") != -1 || agent.indexOf("trident") != -1) {
+                $('#ua').html('<div id="ua">Internet Explorer</div>')
+            } else if (agent.indexOf("edg") != -1 || agent.indexOf("edge") != -1) {
+                $('#ua').html('<div id="ua">Edge</div>')
+            } else if (agent.indexOf("opr") != -1 || agent.indexOf("opera") != -1) {
+                $('#ua').html('<div id="ua">Opera</div>')
+            } else if (agent.indexOf("chrome") != -1) {
+                $('#ua').html('<div id="ua">Chrome</div>')
+            } else if (agent.indexOf("safari") != -1) {
+                $('#ua').html('<div id="ua">Safari</div>')
+            } else if (agent.indexOf("firefox") != -1) {
+                $('#ua').html('<div id="ua">FireFox</div>')
+            } else if (agent.indexOf("opr") != -1 || agent.indexOf("opera") != -1) {
+                $('#ua').html('<div id="ua">Opera</div>')
             }
         })
     </script>
