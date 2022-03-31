@@ -7,22 +7,22 @@
     </head>
     <script>
         $('#ua').ready(function() {
-            const agent = window.navigator.userAgent.toLowerCase()
+            const UA = window.navigator.userAgent.toLowerCase()
 
-            if (agent.indexOf("msie") != -1 || agent.indexOf("trident") != -1) {
-                $('#ua').html('<div id="ua">Internet Explorer</div>')
-            } else if (agent.indexOf("edg") != -1 || agent.indexOf("edge") != -1) {
-                $('#ua').html('<div id="ua">Edge</div>')
-            } else if (agent.indexOf("opr") != -1 || agent.indexOf("opera") != -1) {
-                $('#ua').html('<div id="ua">Opera</div>')
-            } else if (agent.indexOf("chrome") != -1) {
-                $('#ua').html('<div id="ua">Chrome</div>')
-            } else if (agent.indexOf("safari") != -1) {
-                $('#ua').html('<div id="ua">Safari</div>')
-            } else if (agent.indexOf("firefox") != -1) {
-                $('#ua').html('<div id="ua">FireFox</div>')
-            } else if (agent.indexOf("opr") != -1 || agent.indexOf("opera") != -1) {
-                $('#ua').html('<div id="ua">Opera</div>')
+            if (UA.indexOf("msie") != -1 || UA.indexOf("trident") != -1) {
+                $('#ua').html('<div id="ua">Internet Explorer</div>');
+            } else if (UA.indexOf("edg") != -1 || UA.indexOf("edge") != -1) {
+                $('#ua').html('<div id="ua">Edge</div>');
+            } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
+                $('#ua').html('<div id="ua">Opera</div>');
+            } else if (UA.indexOf("chrome") != -1) {
+                $('#ua').html('<div id="ua">Chrome</div>');
+            } else if (UA.indexOf("safari") != -1) {
+                $('#ua').html('<div id="ua">Safari</div>');
+            } else if (UA.indexOf("firefox") != -1) {
+                $('#ua').html('<div id="ua">FireFox</div>');
+            } else if (UA.indexOf("opr") != -1 || UA.indexOf("opera") != -1) {
+                $('#ua').html('<div id="ua">Opera</div>');
             }
         })
     </script>
